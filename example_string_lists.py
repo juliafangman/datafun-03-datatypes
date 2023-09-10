@@ -93,9 +93,17 @@ def get_winner_message(userguess, botguess):
     elif userguess == "paper":
         if botguess == "rock":
             return "Paper covers rock - You win!"
-        else:
-            return "Scissors cuts paper - I win!"
+    elif botguess == "scissors":
+            return "scissors cut paper - I win!"
+        
     # TODO: add the logic for scissors to complete the game
+    elif userguess == "scissors":
+        if botguess == "rock":
+            return "scissors breaks scissors - I win!"
+        elif botguess == "paper":
+            return "Scissors cut paper - You win!"
+    else:
+        return "Invalid input. Please choose from 'rock', 'paper', or 'scissors'."
 
 
 def play_game():

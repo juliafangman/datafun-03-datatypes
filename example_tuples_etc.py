@@ -61,6 +61,8 @@ def illustrate_tuples():
     # TODO: Start using this f-string "syntactic sugar" for quick ouptut
     # just add space = space inside the curly braces
     # it will print the name of the variable and the value
+
+
     logger.info(f"{tupleA = }")
     logger.info(f"{tupleB = }")
     logger.info(f"{tupleCat = }")
@@ -190,6 +192,13 @@ def illustrate_dictionaries():
     }
     logger.info(f"data_dict = {data_dict}")
 
+    TennisPlayerA_dict = {"name": "Djokovic", "age": 36, "weight_lbs": 170}
+    TennisPlayerB_dict = {"name": "Nadal", "age": 37, "weight_lbs": 187}
+
+    logger.info(f"TennisPlayerA_dict = {TennisPlayerA_dict}")
+    logger.info(f"TennisPlayerB_dict = {TennisPlayerB_dict}")
+
+
     # In data anlytics, dictionaries may be used to store and manipulate
     # tabular data, e.g. from database records or Excel rows.
 
@@ -239,8 +248,20 @@ if __name__ == "__main__":
 
     # call your functions here
     illustrate_tuples()
+
+    def illustrate_tuples ():
+        logger.info("Illustrating Tuples")
+
     illustrate_sets()
+
+    def illustrate_sets():
+        logger.info("Illustrating Sets")
+
     illustrate_dictionaries()
+
+    def illustrate_dictionaries():
+        logger.info("Illustrating Dictionaries")
+
 
     logger.info("Add more logging statements to the code to see what happens.")
     logger.info("Explore enough to understand.")
